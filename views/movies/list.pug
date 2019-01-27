@@ -1,0 +1,8 @@
+extends ../layout.pug
+
+block body
+  h2 Movies
+  section.movies
+    each movie in movies
+      article.movie
+        p.movie--title= movie.title
